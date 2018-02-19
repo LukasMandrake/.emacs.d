@@ -1,0 +1,12 @@
+/home/mandrake/jobs_test
+/home/mandrake/#jobs_test#
+/home/mandrake/acos_scripts/add_airmass_to_flatfile.py
+/home/mandrake/acos_scripts/#add_airmass_to_flatfile.py#
+/home/mandrake/acos_scripts/filter_flatfile_by_outcome.py
+/home/mandrake/acos_scripts/#filter_flatfile_by_outcome.py#
+/home/mandrake/acos_scripts/show_tccon_data.py
+/home/mandrake/acos_scripts/#show_tccon_data.py#
+/home/mandrake/acos_scripts/read_gosat_hdf_210_comprehensive.py
+/home/mandrake/acos_scripts/#read_gosat_hdf_210_comprehensive.py#
+/home/mandrake/acos_scripts/prepare_gosat_data_210.py
+/home/mandrake/acos_scripts/#prepare_gosat_data_210.py#

@@ -24,7 +24,17 @@
 ;;activate on startup
 (workgroups-mode 1)
 ;;default workgroup to load
-(wg-load "/home/mandrake/emacs_state/wg-save")
+;; Note: home directory is different on Linux vs Mac vs Windows!
+(if (eq system-type 'darwin)
+  ; something for OS X if true
+    (wg-load "/Users/mandrake/emacs_state/wg-save")
+  ; optional something if not
+)
+(if (eq system-type 'gnu/linux)
+  ; something for GNU-Linux if true
+    (wg-load "/home/mandrake/emacs_state/wg-save")
+  ; optional something if not
+)
 
 ;;paradox-list-packages command, token permits rating system
 (setq paradox-github-token "0bfb5cc63319a4d41cf963f01ae5f81a9467674e")

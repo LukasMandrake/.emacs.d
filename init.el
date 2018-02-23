@@ -207,3 +207,12 @@
                    (lambda (l1 l2)
                      (apply #'< (mapcar (lambda (range) (- (cdr range) (car range)))
                                         (list l1 l2)))))))))
+
+;; Adding support for YAML Mode
+(add-hook 'yaml-mode-hook
+	  (lambda ()
+            (define-key yaml-mode-map "\C-m" 'newline-and-indent)))
+
+(require 'yaml-mode)
+(add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
+(add-to-list 'auto-mode-alist '("\\.yaml\\'" . yaml-mode))
